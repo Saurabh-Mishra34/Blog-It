@@ -1,0 +1,140 @@
+{% extends "layout.html" %} {% block body %}
+<!-- Page Header-->
+<header
+  class="masthead"
+  style="background-image: url(' {{ url_for('static',filename='assets/img/home-bg.jpg')}} ' )"
+>
+  <div class="container position-relative px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="site-heading">
+          <h1>Clean Blog</h1>
+          <span class="subheading">The best blogging site online</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Main Content-->
+<div class="container px-4 px-lg-5">
+  <div class="row gx-4 gx-lg-5 justify-content-center">
+    <div class="col-md-10 col-lg-8 col-xl-7">
+      <!-- Post preview-->
+      <div class="post-preview">
+        <a href="/post">
+          <h2 class="post-title">First Post</h2>
+          <h3 class="post-subtitle">Genuine</h3>
+        </a>
+        <p class="post-meta">
+          Posted by
+          <a href="#!">Saurabh</a><br />
+          “I'm selfish, impatient and a little insecure. I make mistakes, I am
+          out of control and at times hard to handle. But if you can't handle me
+          at my worst, then you sure as hell don't deserve me at my best.”
+        </p>
+      </div>
+
+   
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="post-preview">
+          <a href="/post">
+            <h2 class="post-title">Second Post</h2>
+            <h3 class="post-subtitle">Genuine</h3>
+          </a>
+          <p class="post-meta">
+            Posted by
+            <a href="#!">Vrunda</a><br />
+            “Did you know that 'I told you so' has a brother,Jacob?" she asked
+            cutting me off. "His name is 'Shut the hell up'.”
+          </p>
+        </div>
+      </div>
+      
+
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="post-preview">
+          <a href="/post">
+            <h2 class="post-title">Third Post</h2>
+            <h3 class="post-subtitle">Genuine</h3>
+          </a>
+          <p class="post-meta">
+            Posted by
+            <a href="#!">Binal</a><br />
+
+            “All I'd ever wanted was to forget. but even when I thought I had,
+            pieces had kept emerging, like bits of wood floating up to the
+            surface that only hint at the shipwreck below.”
+          </p>
+        </div>
+     
+
+        <div class="col-md-10 col-lg-8 col-xl-7">
+          <div class="post-preview">
+            <a href="/post">
+              <h2 class="post-title">Four Post</h2>
+              <h3 class="post-subtitle">Genuine</h3>
+            </a>
+            <p class="post-meta">
+              Posted by
+              <a href="#!">Ruchi</a><br />
+
+              “If you have a dream, don’t just sit there. Gather courage to
+              believe that you can succeed and leave no stone unturned to make
+              it a reality.”
+            </p>
+          </div>
+  </div>
+</div>
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop"
+        >
+          Next post
+        </button>
+        <br />
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="staticBackdrop"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Sorry!</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">No next post</div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                  Understood
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% endblock %}
+</div>

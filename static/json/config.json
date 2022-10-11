@@ -1,0 +1,13 @@
+{
+  "params":
+  {
+    "local_server": "True",
+    "host": "localhost",
+    "user": "root",
+    "db": "blogit",
+    "fb": "https://www.facebook.com/profile.php?id=100009190315705",
+    "twit":"https://twitter.com/Saurabh73603304" ,
+    "git": "https://github.com/Saurabh-Mishra34",
+    "site_name": "Blog !t"
+  }
+}
